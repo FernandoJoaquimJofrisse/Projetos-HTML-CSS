@@ -1,0 +1,19 @@
+                        @charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, Sans-serif;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background: #39aae1;
+}
+h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+}
