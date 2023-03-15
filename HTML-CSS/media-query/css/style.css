@@ -8,7 +8,9 @@
 html, body{
     width: 100vw;
     height: 100vh;
-    background: #39aae1;
+    background: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 h1{
     text-align: center;
@@ -16,4 +18,12 @@ h1{
     font-style: italic;
     font-weight: bold;
     color: #fff;
+}
+main{
+    margin: auto;
+    font-size: 3.5em;
+    display: none;
+}
+p{
+   text-align: center;
 }

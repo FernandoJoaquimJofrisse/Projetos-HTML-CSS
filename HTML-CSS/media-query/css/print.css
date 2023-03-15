@@ -1,0 +1,18 @@
+                        @charset "UTF-8";
+
+body{
+    background: #222;
+}
+main{
+    display: inline-block;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+
+}
+
+main, h1{
+    margin-bottom: 20px;
+}
+.titler{
+    display: none;
+}
