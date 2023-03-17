@@ -1,0 +1,34 @@
+                charset "UTF-8";
+@media print{
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../image/back-tablet.jpg);
+    }
+    #image1{display: none}
+    #image2{display: inline-block}
+    #image3{display: none}
+    #image4{display: none}
+    #image5{display: none}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+   body{
+       background-image: url(../image/back-pc.jpg);
+   }
+       #image1{display: none}
+       #image2{display: none}
+       #image3{display: inline-block}
+       #image4{display: none}
+       #image5{display: none}
+}
+@media screen and (min-width:1200px){
+    body{
+         background-image: url(../image/back-tv.jpg);
+    }
+    #image1{display: none}
+    #image2{display: none}
+    #image3{display: none}
+    #image4{display: none}
+    #image5{display: inline-block}
+}
