@@ -1,1 +1,21 @@
-                        @charset "UTF-8";
+                        @charset 'UTF-8';
+
+@media screen and (min-width: 768px){
+    #menu{
+        display: none;
+    }
+    nav{
+        display: block;
+        ul > li{
+            display: inline-block;
+
+        a{
+            margin-right: 20px;
+            transition: 1s;
+        }
+        }
+    }
+    main{
+        width: 768px;
+    }
+}
