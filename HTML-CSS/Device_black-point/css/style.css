@@ -18,9 +18,6 @@ body header h1, html header h1 {
   text-transform: capitalize;
   margin-top: 10px;
 }
-body header nav, html header nav {
-  display: none;
-}
 body header nav ul, html header nav ul {
   list-style-type: none;
 }
