@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html html {
+  width: 100vw;
+  height: 100vh;
+  background-color: #39aae1;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 10em;
+  text-align: center;
+}
+
+.item1, .fot3, .fot1, main {
+  color: #fff;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  background: #222;
+}
+
+.item2, .fot4, .fot2 {
+  color: #fff;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  background: red;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10em;
+  text-align: center;
+  background: #CCC;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 5em;
+  text-align: center;
+  grid-gap: 20px;
+  background: darkblue;
+}
+
+.fot3 {
+  background: #39aae1;
+}
+
+.fot4 {
+  background: green;
+}
+
+/*# sourceMappingURL=style.css.map */

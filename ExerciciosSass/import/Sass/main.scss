@@ -1,0 +1,11 @@
+                    @charset "UTF-8";
+
+                    @import 'variable';
+@mixin mains($bg-color){
+    background-color: $bg-color;
+    height: 90vh;
+    //width: 90vw;
+}
+main{
+    @include mains($color-02);
+}

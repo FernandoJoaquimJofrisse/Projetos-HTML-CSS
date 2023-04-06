@@ -1,0 +1,57 @@
+
+
+					@import 'variable';
+					@import 'mixin';
+
+
+header{
+	@include cabeca();
+	@include flexCenter(0,row, space-between);
+	color: $white;
+
+	.logo{
+
+		h1{
+			@include font(3.5em, 2px);
+			margin-left: 5px;
+		}
+	}
+
+	.btn{
+		@include font(3em, 0px);
+		@include hover(5px);
+		transition: 1s;
+		margin-right: 10px;
+		cursor: pointer;
+
+	}
+	#menu{
+		@include menu(15%, 0px, 0px, 90%vh, 90%vw, 0px, 10px);
+		display: none;
+		margin: auto;
+		ul{
+			//@include flexCenter(30px, column, center);
+			list-style: none;
+			//display: block;
+
+			li{
+				text-align: center;
+			}
+			a{
+				text-decoration: none;
+				color: $white;
+				width: auto;
+				display: block;
+				margin-top: 30px;
+				text-align: center;
+				border-radius: 10px;
+				transition: 1s;
+				padding: 10px;
+				text-transform: upperCase;
+				@include hover(0px);
+				@include font(1.8em, 2px);
+			}
+		}
+	}
+
+}

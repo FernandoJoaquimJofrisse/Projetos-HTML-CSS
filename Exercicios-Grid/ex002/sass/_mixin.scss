@@ -1,0 +1,16 @@
+
+				@import 'variable';
+@mixin Grid($coluna, $linha, $spaco){
+	display: grid;
+	grid-template-columns: $coluna;
+	grid-template-rows: $linha;
+	grid-gap: $spaco;
+	//grid-template-areas: $area;
+}
+@mixin font($size, $spletra){
+	font:{
+		size: $size;
+		letter-spacing: $spletra;
+		weight: bold;
+	}
+}

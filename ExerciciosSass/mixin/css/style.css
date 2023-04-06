@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  height: 80px;
+  background-color: #A40E4C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-direction: row;
+  color: #fff;
+}
+header .logo h1 {
+  letter-spacing: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 5px;
+}
+header .btn {
+  letter-spacing: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  transition: 1s;
+  margin-right: 10px;
+  cursor: pointer;
+}
+header .btn:hover {
+  background-color: #2C2C54;
+  color: #F5D6BA;
+  padding: 5px;
+  font-weight: bold;
+}
+header #menu {
+  position: absolute;
+  top: 15%;
+  right: 0px;
+  left: 0px;
+  width: 90% vw;
+  height: 90% vh;
+  padding: 0px;
+  border-radius: 10px;
+  background-color: #A40E4C;
+  display: none;
+  margin: auto;
+}
+header #menu ul {
+  list-style: none;
+}
+header #menu ul li {
+  text-align: center;
+}
+header #menu ul a {
+  text-decoration: none;
+  color: #fff;
+  width: auto;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 1s;
+  padding: 10px;
+  text-transform: upperCase;
+  letter-spacing: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-style: italic;
+}
+header #menu ul a:hover {
+  background-color: #2C2C54;
+  color: #F5D6BA;
+  padding: 0px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

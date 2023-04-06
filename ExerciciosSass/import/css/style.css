@@ -1,0 +1,48 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #39aae1;
+}
+header h1 {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+header nav ul {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  transition: 1s;
+  padding: 5px;
+}
+header nav ul li a:hover {
+  background: black;
+  color: #39aae1;
+}
+
+main {
+  background-color: #5f2c82;
+  height: 90vh;
+}
+
+main {
+  background-color: #5f2c82;
+  height: 90vh;
+}
+
+footer {
+  background-color: #2E4057;
+  height: 90vh;
+}
+
+/*# sourceMappingURL=style.css.map */

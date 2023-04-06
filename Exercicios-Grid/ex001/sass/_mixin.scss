@@ -1,0 +1,19 @@
+
+	@import 'variable';
+
+@mixin items($bg){
+    //height: 50px;
+    color: #fff;
+    padding: 20px;
+    font:{
+        size: 2em;
+        weight: bold;
+    }
+    background: $bg;
+}
+@mixin grid($columns, $linha){
+	display: grid;
+	grid-template-columns: $columns;
+	grid-template-rows: $linha;
+	text-align: center;
+}
