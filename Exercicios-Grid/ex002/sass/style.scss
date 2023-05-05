@@ -1,0 +1,50 @@
+
+									@charset "UTF-8";
+
+									@import 'mixin';
+									@import 'variable';
+
+
+
+header{
+	@include Grid(repeat(3, 2fr), 1fr, 0px);
+	background-color:$color-blue;
+	align-items: center;
+
+	.logo{
+		//background:$color-creme;
+		text-align: center;
+		h1{
+			font-size: 2.5em;
+			color: $color-white;
+			letter-spacing: 5px;
+		}
+	}
+	nav{
+
+		ul{
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+
+			a{
+				text-decoration: none;
+				color: $color-white;
+				padding: 10px;
+				transition: 1s;
+				font:{
+					size: 1.5em;
+					weight: bold;
+				}
+				text-transform: upperCase;
+				&:hover{
+					background: $color-red;
+				}
+			}
+		}
+
+	}
+
+}

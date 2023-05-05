@@ -1,0 +1,53 @@
+
+			@import 'variable';
+			@import 'mixin';
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html html{
+	width: 100vw;
+	height: 100vh;
+	background-color: $color-bluer;
+}
+
+header{
+	@include grid(auto auto, 10em);
+	
+}
+.item1{
+	@include items($color-black);
+
+}
+.item2{
+	@include items($color-red);
+
+}
+main{
+	@include grid(auto, 10em);
+	@extend .item1;
+	background: $color-sinza;
+}
+footer{
+	//height: 100vw;
+	@include grid(auto auto auto auto, 5em);
+	grid-gap: 20px;
+	background: darkblue;
+}
+.fot1{
+	@extend .item1;
+}
+.fot2{
+	@extend .item2;
+}
+.fot3{
+	@extend .item1;
+	background: $color-bluer;
+}
+.fot4{
+	@extend .item2;
+	background: green;
+}
+

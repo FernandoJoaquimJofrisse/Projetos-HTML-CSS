@@ -1,0 +1,55 @@
+
+					@import 'variable';
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+@mixin cabeca(){
+	height: 80px;
+	background-color: $amarelo-Roxo;
+}
+
+@mixin font($tamanho, $spaco){
+	letter-spacing: $spaco;
+	font: {
+		 family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		 size: $tamanho;
+		 weight: bold;
+		 style: italic;
+
+	}
+
+}
+
+@mixin flexCenter($gap, $direction, $justify){
+	display: flex;
+	justify-content: $justify;
+	align-items: center;
+	gap: $gap;
+	flex-direction: $direction;
+}
+@mixin hover($padd){
+	&:hover{
+		background-color: $cadete;
+		color:$pessego;
+		padding: $padd;
+		font-weight: bold;
+	}
+
+}
+
+@mixin menu($top, $right, $left, $altura, $largura, $padd, $borda){
+	position: absolute;
+	top: $top;
+	right: $right;
+	left: $left;
+	width: $largura;
+	height: $altura;
+	padding: $padd;
+	border-radius: $borda;
+	background-color: $amarelo-Roxo;
+}

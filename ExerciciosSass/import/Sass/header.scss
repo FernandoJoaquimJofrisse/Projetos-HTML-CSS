@@ -1,0 +1,44 @@
+
+        @import 'variable';
+
+@mixin flexBox($around, $dir){
+    display: flex;
+    justify-content: $around;
+    align-items: center;
+   flex-direction: $dir;
+
+}
+@mixin link-style($cor, $font-size, $decoration, $transition, $space){
+    text-decoration: $decoration;
+    font-size: $font-size;
+    color: $cor;
+    transition: $transition;
+    padding: $space;
+}
+    header{
+        @include flexBox(space-between, row);
+        background-color: $color-01;
+
+        h1{
+            margin-left: 10px;
+            font-size: 1.5em;
+        }
+        nav{
+            ul{
+                margin-right: 10px;
+                @include flexBox(space-between, row);
+                gap: 15px;
+                list-style: none;
+
+                li a{
+                    @include link-style(white, 1.5em, none, 1s, 5px);
+
+                    &:hover{
+                        background: black;
+                        color: $color-01;
+                    }
+                }
+            }
+        }
+
+    }

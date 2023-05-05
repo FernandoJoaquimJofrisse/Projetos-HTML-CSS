@@ -1,8 +1,14 @@
+        @charset "UTF-8";
 *{
    margin: 0px;
    padding: 0px;
    box-sizing: border-box;
    font-family: 'Lucida Sans', 'Lucida Sans Regular''Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body,html{
+    background-color: #2E4057;
+    height: 100vh;
+    width: 100vw;
 }
 nav{
    width: 100vw;
@@ -69,3 +75,33 @@ nav{
         }
     }
 }
+main{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12%;
+
+       section,#login{
+            //width: auto;
+            height: 500px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(0,0,0,0.450);
+            overflow: hidden;
+
+            #login, div#imagem{
+                //display: block;
+                background: #2E4057 url(../img/nando1.jpg) no-repeat;
+                background-position: top center;
+                background-size: cover;
+                height: 220px;
+
+
+            }
+       }
+
+
+
+    }
