@@ -26,6 +26,7 @@ header{
 	display: none;
 }
 #menu{
+	background-color: #39aae1;
 	position: absolute;
 	right: 10px;
 	top: 5rem;
