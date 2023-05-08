@@ -33,6 +33,10 @@ header{
 	width: 100vw;
 	height: 90vh;
 	text-align: center;
+	transform: translateX(-5px);
+	animation-name: slider;
+	animation-duration: .5s;
+
 }
 nav > ul{
 	list-style: none;
@@ -72,4 +76,15 @@ nav > ul > li > a:hover{
 	align-items: center;
 	justify-content: center;
 	display: none;
+}
+
+@keyframes slider{
+	from{
+
+		opacity: 0;
+	}
+	to{
+		transform: translateX(10);
+		opacity: 1;
+	}
 }

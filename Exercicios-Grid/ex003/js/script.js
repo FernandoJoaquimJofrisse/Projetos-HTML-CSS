@@ -1,11 +1,12 @@
-
+/*
 function changSize(){
-	if(widow.innerWidth >= 768){
+	if(Widow.innerWidth >= 768){
 		menu.style.display = 'block'
 	}else{
 		menu.style.display = 'none'
 	}
 }
+*/
 
 
 function sending(){
