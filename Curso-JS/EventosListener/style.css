@@ -1,0 +1,31 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+.prince{
+	padding: 20px;
+	font-weight: bold;
+	text-align: center;
+
+}
+.nota{
+	border: 2px solid #ff7200;
+	height: 50px;
+	width: 200px;
+	line-height: 50px;
+	border-radius: 10px;
+	margin: 20px;
+	cursor: pointer;
+	background: darkblue;
+	color: #fff;
+}
+.nota:hover{
+	background-color: black;
+	color: #ff7200;
+}
+.destaqui{
+	color: darkblue !important;
+	background: red !important;
+}
+

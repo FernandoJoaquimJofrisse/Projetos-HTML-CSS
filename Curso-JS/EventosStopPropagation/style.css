@@ -1,0 +1,28 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial, verdana, Helvetica, Sans-Serif;
+}
+main{
+	display: grid;
+	grid-template-columns: 500px 200px 500px;
+	grid-auto-rows: 1fr  50px 1fr;
+}
+.caixa{
+	border: 5px solid #ff7200;
+	margin: 2em;
+	text-align: center;
+	font-weight: bold;
+}
+.nota{
+	margin: 1.5em;
+	border: 2px solid #CCC;
+	padding: 0.5em;
+	border-radius: 10px;
+	background: orange;
+	color: #fff;
+	cursor: pointer;
+}
+.nota:hover{
+	background-color: blue;
+}
