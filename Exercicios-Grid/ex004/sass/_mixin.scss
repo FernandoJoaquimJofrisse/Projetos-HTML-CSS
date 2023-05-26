@@ -1,0 +1,74 @@
+
+
+					@use 'variable';
+
+
+
+@mixin Ul(){
+	list-style: none;
+}
+@mixin Link($text-d, $color, $f-size, $f-weight){
+	text-decoration: $text-d;
+	color: $color;
+	transition: 1s;
+	font:{
+		size: $f-size;
+		weight: $f-weight;
+	}
+	&:hover{
+		color: $color-prince;
+	}
+}
+@mixin Grid-area($rows, $columns){
+	display: grid;
+	grid-template-columns: $columns;
+	grid-template-rows: $rows;
+}
+@mixin Content($width, $height, $bg-repeat, $bg-size, $position){
+	width: $width;
+	height: $height;
+	background-color: $color-five;
+	background-image: $bg-image;
+	background-repeat: $bg-repeat;
+	background-size: $bg-size;
+	background-position: $position;
+}
+@mixin Flex($items, $content, $space){
+	display: flex;
+	justify-content: $content;
+	align-items: $items;
+	gap: $space;
+}
+@mixin Font($family, $size, $negrito){
+	font:{
+		family: $family;
+		size: $size;
+		weight: $negrito;
+	}
+}
+@mixin Search($width, $height, $border, $px, $center, $color, $bg-color, $border-color){
+	width: $width;
+	height: $height;
+	border: $px $border $border-color;
+	text-align: $center;
+	background-color: $bg-color;
+	color: $color;
+	font-weight: bold;
+}
+@mixin Border($border-right, $border-bottom, $border-top, $border-r, $border-ri){
+	border-right-radius: $border-right;
+	border-top-left-radius: $border-top;
+	border-bottom-left-radius: $border-bottom;
+	border-top-right-radius: $border-r;
+	border-bottom-right-radius: $border-ri;
+
+}
+@mixin InputLogin($none, $height, $bg-color, $color){
+	border-right: $none;
+	border-left: $none;
+	border-top: $none;
+	border-top-left: $none;
+	height: $height;
+	background-color: $bg-color;
+	color: $color;
+}

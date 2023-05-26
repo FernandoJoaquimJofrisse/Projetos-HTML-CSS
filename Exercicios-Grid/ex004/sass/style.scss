@@ -1,0 +1,182 @@
+
+
+			@charset 'UTF-8';
+
+			@import 'variable';
+			@import 'mixin';
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial, Helvetica, Sans-Serif;
+}
+html, body{@include Content(100vw, 100vh, no-repeat, cover, left center);}
+.content{
+
+		@include Grid-area(2fr 4fr, 93vw);
+		grid-template-areas:
+			"header"
+			"main"
+			;
+		justify-content: center;
+
+	header{
+		//background-color: red;
+		grid-area: header;
+		//@include Grid(repeat(3, 1fr),unset, unset, unset);
+		@include Flex(unset, space-between, 0px);
+		height: 200px;
+
+		.logo{
+			margin-top: $margin-top;
+
+			h1{
+				color: $color-prince;
+				font:{
+					size: 3rem;
+					weight: bold;
+				}
+
+			}
+		}
+
+		nav{
+			margin-top: ($margin-top + 10px);
+		}
+		ul{
+			@include Ul();
+			@include Flex(unset, unset, 5em);
+
+			li{
+				a{
+					@include Link(none, $color-seven, 1.5rem, bold);
+				}
+			}
+		}
+		.search{
+			margin-top: $margin-top;
+			@include Flex(unset, unset, 0px);
+			input:first-child {
+				@include Search(350px, 60px, solid, 2px,center, $color-seven,transparent, $color-prince);
+				@include Border(none, 10px, 10px, 0px, 0px);
+				font-family: $font;
+			}
+			input:last-child{
+				@include Search(100px, 60px, solid, 2px, center, $color-seven, $color-prince, $color-prince);
+				@include Border(unset, 0px, 0px, 10px, 10px);
+				cursor: pointer;
+			}
+		}
+	}
+	main{
+		//background-color: green;
+		grid-area: main;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		//grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+		"info login";
+		.info{
+			grid-area: info;
+			//background-color: $color-tree;
+			margin-top: 5em;
+
+			.block_info{
+				h2{
+					@include Font($font, 3.5em, bold);
+					color: $color-seven;
+					span:nth-of-type(1){
+						@include Font($font, 1.5em, bold);
+						color: $color-prince;
+					}
+					span:nth-of-type(2){
+						@include Font($font, 1.5em, bold);
+						color: $color-seven;
+					}
+				}
+				p{
+					color: $color-seven;
+					margin-bottom: 20px;
+					font:{
+						size: 1.3em;
+						style: italic;
+					}
+
+				}
+				#btn-info{
+					@include Search(150px, 50px, solid, 1px, center, $color-five, $color-prince, $color-prince);
+					@include Border(0px, 10px, 10px, 10px, 10px);
+					box-shadow: 2px 5px 3px #4f2706d9;
+					cursor: pointer;
+				}
+			}
+		}
+		.login{
+			grid-area: login;
+			//background-color: $color-for;
+			.content_login{
+				@include Search(auto, auto, solid, 2px, center, unset, $color-five, unset);
+				@include Border(0px, 10px, 10px, 10px, 10px);
+				float: right;
+				padding: 20px;
+				h3{
+					@include Font(arial, 2em, bold);
+					@include Border(0px, 10px, 10px, 10px, 10px);
+					color: $color-prince;
+					background-color: $color-seven;
+					padding: 10px;
+					margin-bottom: 20px;
+				}
+
+				.login_here{
+					@include Flex(unset, unset, 1em);
+					flex-direction: column;
+					margin-top: 20px;
+
+					#imail{
+						border: 2px solid $color-prince;
+						@include InputLogin(none, 50px, transparent, $color-seven);
+					}
+					#senha{
+						@extend #imail;
+					}
+					#btn_login{
+						@extend h3;
+						border: 2px solid $color-prince;
+						margin: 0px;
+						background: $color-prince;
+						color: $color-five;
+					}
+				}
+				p{
+					color: $color-seven;
+					font-size: 1.2em;
+					margin-top: 1rem;
+					a:nth-of-type(1){
+						text-decoration: none;
+						color: $color-prince;
+					}
+				}
+				.login_footer{
+					h4:nth-of-type(1){
+						@extend p;
+					}
+					.footer_net > i > img{
+						margin-top: 1rem;
+						font-size: 1em;
+						cursor: pointer;
+
+						&:hover{
+							color: $color-tree;
+						}
+					}
+
+				}
+			}
+
+
+		}
+	}
+
+}
